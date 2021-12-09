@@ -1,0 +1,26 @@
+.info-menu
+    list-style: none
+    display: flex
+    margin-left: 67px
+    &__item
+        margin-right: 16px
+        &:last-of-type
+            margin-right: 0
+        & a
+            color: #7B94B0
+        &-img
+            & svg
+                transition: .4s
+                margin-top: -1px
+    &__dropdown
+        position: relative
+        &:hover
+            .info-menu__dropdown-group
+                display: block
+            .info-menu__item-img
+                & svg
+                    transform: translateY(-2px) rotate(0.5turn)
+
+        &-group
+            display: none
+            position: absolute

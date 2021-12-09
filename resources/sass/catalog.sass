@@ -1,0 +1,33 @@
+.catalog
+    display: none
+    //display : flex
+    padding: 3px 0 0 96px
+    &-item
+        margin-right: 39px
+        cursor: pointer
+        position: relative
+        &__arrow
+            margin-left: 3px
+            & svg
+                transition: .5s
+        &:last-of-type
+            margin-right: 0
+            margin-left: 2px
+        &__link
+            font-size: 18px
+            font-weight: 700
+            color: #202454
+            transition: .3s
+        &:hover
+            .catalog
+                &-item
+                    &__link
+                        color: #2C9323
+                    &__arrow
+                        & svg
+                            transform: translateY(-3px) rotate(0.5turn)
+                &-dropdown
+                    display: block
+    &-dropdown
+        display: none
+        position: absolute

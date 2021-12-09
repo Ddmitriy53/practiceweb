@@ -1,0 +1,65 @@
+.deals
+    &-head
+        display: flex
+        align-items: center
+        padding-top: 44px
+        &__title
+            margin-top: 2px
+            font-family: 'Roboto', sans-serif
+            font-size: 32px
+            font-weight: 400
+            color: #202454
+    &-filter
+        padding: 10px 0 0 25px
+        display: flex
+        &__item
+            margin-right: 1px
+            font-size: 14px
+            font-weight: 700
+            color: #7B94B0
+            background-color: transparent
+            padding: 5px 12px 5px 11px
+            border-radius: 20px
+            text-decoration: underline dashed #7B94B0
+            text-underline-offset: 4px
+            line-height: 22px
+            transition: .4s
+            &:hover
+                color: #202454
+                text-decoration: underline dashed #202454
+            &.active
+                color: #E77E42
+                background-color: #FDF2EC
+                border-radius: 20px
+                text-decoration: none
+                &:hover
+                    text-decoration: none
+            &:last-of-type
+                margin-right: 0
+        &-switch
+            margin-left: auto
+            display: flex
+            padding-top: 9px
+            &__button
+                background-color: #E77E42
+                border-radius: 3px
+                padding: 3px 11px 7px 12px
+                &-prev
+                    & svg
+                        transform: rotate(180deg)
+                    &.first
+                        background-color: #E0E0E0
+                        cursor: default
+                &-next
+                    margin: 0 -1px 0 8px
+                    &.last
+                        background-color: #E0E0E0
+                        cursor: default
+
+.deals-slider
+    padding-top: 31px
+    padding-bottom: 50px
+    display: flex
+    &__item
+        width: 260px
+        margin: 0 auto

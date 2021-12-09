@@ -1,0 +1,28 @@
+.to-top
+    margin: 1px 0 0 -8px
+    &__link
+        display: flex
+        align-items: center
+    &__text
+        font-size: 13px
+        transition: .5s
+    &__img
+        width: 48px
+        height: 48px
+        border-radius: 50%
+        background-color: rgba(255, 255, 255, .2)
+        display: flex
+        align-items: center
+        justify-content: center
+        margin: -1px 0 0 16px
+        transition: .5s
+        & svg
+            transition: .5s
+    &:hover
+        .to-top
+            &__text
+                color: #fff
+            &__img
+                background-color: #fff
+                & svg
+                    stroke: #E77E42

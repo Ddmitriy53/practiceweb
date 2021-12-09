@@ -1,0 +1,50 @@
+.action
+    display: flex
+    align-items: center
+    margin: -2px 0 0 auto
+    padding: 0 15px 0 0
+
+    &-search
+        margin: 1px 17px 0 0
+        &-form
+            display: flex
+            align-items: center
+            &__input
+                width: 50px
+                height: 20px
+                border: none
+                &,
+                &::placeholder
+                    display: none
+                    font-size: 16px
+                    font-weight: 700
+                    color: #202454
+                &:focus
+                    border: none
+                    outline: none
+        &__button
+            margin-right: 7px
+    &-menu
+        &__item
+            margin-right: 9px
+            &-favourite
+                margin: 0 8px 0 4px
+            &-basket
+                position: relative
+                margin-right: 2px
+            &:last-of-type
+                margin-right: 0
+        &__basket-count
+            position: absolute
+            top: -6px
+            right: -15px
+            width: 20px
+            height: 20px
+            border-radius: 50%
+            background-color: #E77E42
+            display: flex
+            justify-content: center
+            align-items: center
+            font-size: 12px
+            font-weight: 700
+            color: #fff

@@ -1,0 +1,59 @@
+.search
+    &-card
+        background-color: rgba(2, 108, 0, .3)
+        border-radius: 30px
+        text-align: center
+        padding: 80px 0
+        & .container
+            max-width: 420px
+    &-top
+        &__subtitle
+            font-family: 'Roboto Condensed', sans-serif
+            font-size: 14px
+            font-weight: 700
+            color: #A4563E
+            text-transform: uppercase
+        &__logo
+            padding: 12px 0 5px 0
+            & img
+                margin: 0 auto
+        &__title
+            font-size: 44px
+            color: #275420
+            font-weight: 700
+            margin-top: -14px
+        &__text
+            padding: 13px 0 25px 0
+            color: #202454
+    &-tile
+        padding-bottom: 34px
+        &-item
+            transition: .5s
+            &:hover
+                box-shadow: 0 0 20px 10px rgba(255, 255, 255, .5)
+    &-bottom
+        &-item
+            &__link
+                display: flex
+                align-items: center
+                width: fit-content
+                margin: 0 auto
+                font-family: 'Roboto Condensed', sans-serif
+                font-size: 16px
+                color: #fff
+                font-weight: 700
+                text-transform: uppercase
+                padding: 15px 30px 14px 31.5px
+                background-color: #E77E42
+                outline: 1px solid transparent
+                border-radius: 3px
+                transition: .7s
+                & svg
+                    margin-left: 10px
+                    transition: .7s
+                &:hover
+                    outline-color: #fff
+                    & svg
+                        transform: translateX(5px)
+                &:focus
+                    outline: 1px solid black

@@ -1,0 +1,196 @@
+@media (max-width: 700px)
+
+    body
+        position: relative
+
+    .header
+        height: 80px
+        background-color: #2C9323
+        display: flex
+        align-items: center
+        .container
+            max-width: 650px
+        &-info,
+        &-main
+            display: none
+        &-mob
+            padding: 0 0 0 0
+            display: flex
+            align-items: center
+            justify-content: space-between
+
+    .action-menu
+        margin: 0 5px 0 0
+
+    .deals
+        &-head
+            display: flex
+            flex-direction: column
+            padding: 20px 0 15px 0
+            &__title
+                margin: 0
+                & h2
+                    font-size: 25px
+                    text-align: center
+        &-filter
+            padding: 15px 0 5px 0
+            justify-content: space-between
+            &__item
+                margin: 0
+            &__button
+                font-size: 12px
+            &-switch
+                display: none
+        &-slider
+            padding: 10px 0 20px 0
+
+    .useful-block
+        padding: 20px 0
+    .search-card
+        margin: 0
+        padding: 30px 10px
+        border-radius: 15px
+    .search-top
+        &__logo
+            padding: 20px 0
+        &__title
+            font-size: 30px
+        &__text
+            font-size: 15px
+            padding: 15px 0 20px 0
+    .search-bottom
+        &-item
+            &__link
+                font-size: 14px
+    .blog
+        position: relative
+        padding: 50px 0 0 0
+        &__title
+            padding: 0
+            font-size: 26px
+            text-align: center
+        &-filter
+            justify-content: center
+            &__group
+                justify-content: space-around
+                flex-flow: wrap
+            &__item
+                margin: 4px 0
+            &__button
+                font-size: 13px
+            &__follow
+                position: absolute
+                bottom: 0
+                left: 50%
+                transform: translateX(-50%)
+        &-tile
+            padding: 25px 0 35px 0
+            justify-content: center
+        &-card
+            width: 100%
+            &__text
+                margin: 0
+                padding: 5px 0 0 10px
+                font-size: 18px
+    .benefits
+        padding: 40px 0 0 0
+        &-item
+            margin: 20px 0
+            padding: 0
+    .seo
+        text-align: center
+        &__inner
+            padding: 30px 0
+            height: auto
+        &__title
+            font-size: 28px
+        &__subtitle
+            font-size: 22px
+        &__text
+            &--hidden
+                height: 125px
+                &::after
+                    height: 50px
+                    top: 75px
+        &__button
+            margin: 40px auto 0 auto
+
+    .involve
+        margin: 0
+        overflow: hidden
+        &__img
+            &-cat
+                z-index: 1
+                opacity: .2
+                right: -60px
+            &-dog
+                z-index: 1
+                opacity: .2
+                left: -45px
+        &-content
+            padding: 45px 0
+            &__text,
+            &__registration
+                z-index: 2
+            &__text
+                font-size: 21px
+            &__registration
+                margin-top: 40px
+
+    .footer
+        padding: 30px 0 0 0
+        &-logo
+            display: flex
+            flex-direction: column
+            align-items: center
+        &-social
+            justify-content: center
+            padding: 20px 0
+        &-communication
+            flex-direction: column
+            align-items: center
+            &-chat
+                margin: 0 15px 20px 0
+        &-terms
+            padding: 15px 0 30px 0
+            &-list
+                text-align: center
+                &__item
+                    margin-bottom: 15px
+
+        &-firm-list,
+        &-customer-list
+            text-align: center
+            &__title
+                cursor: pointer
+                margin: 0 auto 20px auto
+                width: fit-content
+            &__group
+                display: none
+                margin-top: 10px
+
+        &-bottom
+            margin: 0
+            &__inner
+                padding-top: 25px
+                flex-direction: column
+                align-items: center
+        &-development
+            margin: 0
+            padding-top: 20px
+
+        &-contacts
+            margin-left: 0
+            text-align: center
+        &-phone
+            &__link
+                margin: 10px auto
+
+    .to-top
+        position: fixed
+        right: 10px
+        bottom: 10px
+        &__link
+            flex-direction: column-reverse
+        &__img
+            margin: 0

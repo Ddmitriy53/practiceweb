@@ -1,0 +1,23 @@
+.callback
+    display: none
+    //display: flex
+    margin-right: 46px
+    &__group
+        margin: -1px 0 0 8px
+        & li a
+            font-weight: 700
+            color: #7B94B0
+
+    &__dropdown
+        display: none
+        position: absolute
+    &__item
+        &-img
+            & svg
+                transition: .4s
+        &:hover
+            .callback__dropdown
+                display: block
+            .callback__item-img
+                & svg
+                    transform: translateY(-2px) rotate(0.5turn)
